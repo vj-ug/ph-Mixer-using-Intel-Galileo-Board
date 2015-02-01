@@ -45,7 +45,9 @@ void setup() {
     // if you didn't get a connection to the server:
     Serial.println("connection failed");
   }
-}void loop()
+}
+
+void loop()
 {
   // if there are incoming bytes available 
   // from the server, read them and print them:
@@ -53,9 +55,5 @@ void setup() {
     char c = client.read();
     Serial.print(c);
   }
-
-
-
- 
 }
 
