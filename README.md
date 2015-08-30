@@ -13,3 +13,24 @@ Hardware:
 -	Pumps draw 300ma Galileo output pins supply 20ma
 
 Ambient Light sensor is used for threshold
+
+
+The [Intel Galileo Gen 2](https://www-ssl.intel.com/content/www/us/en/do-it-yourself/galileo-maker-quark-board.html) has a pin-out form similar to an Arduino Uno. 
+
+[![](https://cdn.sparkfun.com//assets/parts/1/0/1/3/8/13096-01.jpg)](https://cdn.sparkfun.com//assets/parts/1/0/1/3/8/13096-01.jpg)
+
+Example: 
+
+```js
+var start = require("vasu");
+var Galileo = require("galileo-io");
+var board = new five.Board({
+  io: new Galileo()
+});
+
+board.on("ready", function() {
+  var led = new five.Led(13);
+  led.blink(500);
+});
+```
+
