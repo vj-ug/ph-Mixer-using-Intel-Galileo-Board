@@ -1,6 +1,6 @@
 # ph Mixer using Intel Galileo Gen 2
 
-- AT&T Hackathon
+- AT&T Hackathon Runner's Up
 
 Software:
 -	Arduino sketch to control pumps and send sensor data to cloud
