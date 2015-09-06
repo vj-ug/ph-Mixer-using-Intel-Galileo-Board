@@ -22,7 +22,7 @@ The [Intel Galileo Gen 2](https://www-ssl.intel.com/content/www/us/en/do-it-your
 Example: 
 
 ```js
-var start = require("vasu");
+var start = require("vj");
 var Galileo = require("galileo-io");
 var board = new five.Board({
   io: new Galileo()
